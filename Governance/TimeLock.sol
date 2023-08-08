@@ -7,7 +7,7 @@ import "@openzeppelin/contracts/governance/TimelockController.sol";
 
 // The time lock is going to be the Owner of the Governed contract
 // We use the time lock beacuase we want to wait until a new vote is executed
-// Also we want to setup a minium fee to be able to vote, let's say 7 tokens.
+// Also we want to setup a minium fee to be able to vote, for instance 20 tokens.
 // This Gives time to get out if they don't like the proposal.
 
 contract TimeLock is TimelockController {
